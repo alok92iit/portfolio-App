@@ -1,8 +1,7 @@
 import React from 'react'
 import "../static/css/practicals.css"
 import PracticalCard from './PracticalCard'
-import { card } from './animation'
-import {motion} from "framer-motion"
+
 const Practicals = () => {
   const practicalArray=[
     {
@@ -38,17 +37,14 @@ const Practicals = () => {
     return <PracticalCard weblink={item.weblink} gitRep={item.gitRep} heading ={item.heading} desc ={item.desc} tech={item.tech}/>
   }) 
   return (
-    <motion.section id='practicals'
-    initial='hidden'
-    whileInView='visible'
-    variants={card}
-    viewport={{ once: true,amount:0 }}
+    <section id='practicals'
+
     >
         <h5 className='projectName centerAlign'>Other Noteworthy Projects</h5>
         <ul className='practicalGrid'>
             {cards}
         </ul>
-    </motion.section>
+    </section>
   )
 }
 

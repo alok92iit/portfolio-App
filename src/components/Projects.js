@@ -9,13 +9,15 @@ import { card } from './animation'
 const Projects = () => {
   return (
     <motion.section className='projectContainer' id='projects'
-    initial='hidden'
+
+    >
+        <h2 className='aboutHeading projectLine'>Some Things I’ve Built</h2>
+        <motion.div  className='project'
+            initial='hidden'
     whileInView='visible'
     variants={card}
     viewport={{ once: true,amount:'some'}}
-    >
-        <h2 className='aboutHeading projectLine'>Some Things I’ve Built</h2>
-        <div  className='project'>
+        >
           <div className='imageContainer' style={{maxWidth: '100%', 'display': 'block'}}>
             <div className='imgBackgoundDiv' >
               <a href='https://shopping-day.herokuapp.com/' target='_blank'>
@@ -43,10 +45,20 @@ const Projects = () => {
 
             </div>
             
-        </div>
-       {/* Project Second */}
+        </motion.div>
+       {/* Project 
+           initial='hidden'
+    whileInView='visible'
+    variants={card}
+    viewport={{ once: true,amount:'some'}}
+       Second */}
 
-       <div className='reverseProject'>
+       <motion.div className='reverseProject'
+           initial='hidden'
+           whileInView='visible'
+           variants={card}
+           viewport={{ once: true,amount:'some'}}
+       >
           
             <div className='projectDescReverse'>
             <h5 className='subHeadingReverse'>Featured Project</h5>
@@ -73,7 +85,7 @@ const Projects = () => {
               </a>
             </div>
             </div>
-        </div>
+        </motion.div>
 
     </motion.section>
   )

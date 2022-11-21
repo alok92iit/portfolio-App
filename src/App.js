@@ -124,7 +124,7 @@ function App() {
                       <li><a href='https://www.linkedin.com/in/alok-sharma-522725171/' target='_blank'><Linkedin/></a></li>
                     </ul>
                       <p className='cradits'><a href='https://github.com/bchiang7' target="_blank">Design inspiration from Brittany Chiang</a></p>
-                      <p className='cradits'>Built By Alok Sharma</p>
+                      <p className='cradits'><a href='https://github.com/alok92iit' target='_blank'>Built By Alok Sharma</a></p>
               </footer>
               </>
         }

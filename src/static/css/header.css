@@ -134,29 +134,13 @@ li span{
     background-color: var(--green-tint);
 }
 @media(max-width:768px){
-    /* :root{
 
-    } */
     .bars div{
         display: block;
     }
     .listHeader{
         visibility: hidden;
     }
-    /* .listHeader{
-        height: 100vh;
-        width: 100vw;
-        position: absolute;
-        right: 0px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        padding-left: 0px;
-        overflow: hidden;
-        background-color: var(--light-navy);
-    box-shadow: -10px 0px 30px -15px var(--navy-shadow);
-    
-    } */
     .listHeader li{
         text-align: center;
         align-items: center;
@@ -174,7 +158,7 @@ li span{
     top: 0px;
     bottom: 0px;
     right: -5em;
-    padding: 50px 10px;
+    /* padding: 50px 10px; */
     width: min(70vw, 400px);
     height: 100vh;
     outline: 0px;
@@ -183,12 +167,6 @@ li span{
     /* z-index: 9; */
     transform: translateX(0vw);
     visibility: visible;
-    /* transition: var(--transition);ow: -10px 0px 30px -15px var(--navy-shadow); */
     }
-    /* .outerContainer  {
-        
-        #clicked:checked ~.listHeader{
-        background-color: #64ffda;
-    }
-} */
+
 } 

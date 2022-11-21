@@ -2,9 +2,16 @@ import React from 'react'
 import Folder from './icons/Folder.js'
 import ExternalLink from './icons/ExternalLink'
 import Github from './icons/Github.js'
+import { card } from './animation'
+import {motion} from "framer-motion"
 const PracticalCard = ({weblink,gitRep,heading,desc,tech}) => {
   return (
-    <li className='practicalContainer'>
+    <motion.li className='practicalContainer'
+    initial='hidden'
+    whileInView='visible'
+    variants={card}
+    viewport={{ once: true,amount:0 }}
+    >
               <a href={gitRep} target='_blank'>  <div className='Header'>
                     <Folder/>
                     <ul className='redirectLink'>
@@ -28,7 +35,7 @@ const PracticalCard = ({weblink,gitRep,heading,desc,tech}) => {
                     }
                 </ul>
                 </a>
-            </li>
+            </motion.li>
   )
 }
 
