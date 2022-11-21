@@ -1,0 +1,35 @@
+.github:hover{
+    stroke: var(--green);
+    transform: translateY(-5px);
+}
+.github{
+    transition: all 300ms linear;
+}
+.hackerRank{
+    transition: all 300ms linear;
+}
+.hackerRank:hover .hackerRankInner{
+    fill: var(--green);
+}
+.hackerRank:hover{
+    transform: translateY(-5px);
+}
+.linkedin{
+    transition: all 300ms linear;
+}
+.linkedin:hover{
+    stroke: var(--green);
+    transform: translateY(-5px);
+}
+.externalLink{
+    transition: all 300ms linear;
+}
+.externalLink:hover{
+    stroke: var(--green);
+    transform: translateY(-5px);
+}
+.logo{
+    /* display: flex;
+    align-content: flex-start; */
+    float: left;
+}

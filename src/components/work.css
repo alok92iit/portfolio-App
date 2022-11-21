@@ -1,0 +1,44 @@
+.workContainer{
+    width: 100%;
+    color: var(--slate)
+}
+.jobDesc{
+    padding: 0px 3.5rem;
+    box-sizing: border-box;
+}
+.companyName{
+    color: var(--lightest-slate);
+    font-size: var(--ft-lgmd);
+}
+.companyName::after{
+    content:" @ Broomees India";
+    color:var(--green)
+}
+.workLine::before{
+    content: "0" '2' ".";
+}
+.workDone{
+    width:80%;
+    list-style: none;
+    box-sizing: border-box;
+}
+.workDone li::before{
+    content: "▹";
+    position: relative;
+    left: -20px;
+    color: var(--green);
+
+}
+@media (max-width:778px) {
+    .workDone{
+        width: 100%;
+    }
+}
+@media (max-width:600px){
+    .jobDesc{
+        padding: 0px 1em;
+    }
+    .workDone{
+       padding: 0px 14px
+    }
+}

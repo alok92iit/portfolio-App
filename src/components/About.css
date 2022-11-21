@@ -1,0 +1,110 @@
+.aboutDiv{
+  width: 90%;
+  /* margin: 7% auto; */
+  box-sizing: border-box;
+}
+.aboutHeading{
+    display: flex;
+    align-items: center;
+    /* margin: 10px 0px 40px; */
+    width: 100%;
+    font-size: clamp(26px,5vw,var(--heading));
+    white-space: nowrap;
+    margin: 2rem auto;
+    color: var(--lightest-slate);
+    
+
+}
+.aboutHeading::before{
+    position: relative;
+    bottom: -3px;
+    counter-increment: section 1;
+    content: "0" counter(section) ".";
+    margin-right: 10px;
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: clamp(var(--ft-lg),3vw,var(--ft-lg));
+    font-weight: 400;
+}
+.aboutHeading::after{
+    content: "";
+    display: block;
+    position: relative;
+    align-items: center;
+    top: 5px;
+    width: 300px;
+    height: 2px;
+    margin-left: 20px;
+    background-color: var(--light-navy);
+}
+.profileImg{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    margin: 1rem auto;
+
+}
+.profileImg img{
+    border-radius:5px ;
+    object-fit: cover;
+}
+.floatBorder{
+    width: 300px;
+    height: 300px;
+    border: 2px solid var(--green);
+    position: relative;
+    top: 20px;
+    border-radius: 5px;
+}
+.profileContainer{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: -300px;
+    left: -15px;
+    border-radius:5px ;
+    background-color: var(--green);
+    box-shadow: 0 10px 30px -15px var(--navy-shadow);
+ 
+
+}
+.profileContainer img{
+    mix-blend-mode: multiply;
+    filter: grayscale(100%) contrast(1) brightness(90%);
+}
+.profileContainer:hover,.profileContainer img:hover{
+    background-color: transparent;
+    filter: none;
+    mix-blend-mode:normal;
+    box-shadow: 0 20px 30px -15px var(--navy-shadow);
+}
+/* Content css */
+.aboutFlex{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
+    gap:50px;
+    color: var(--slate);
+    box-sizing: border-box;
+    font-family: var(--font-sans);
+}
+.skills{
+    list-style: none;
+    padding: 0px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+}
+.skills li{
+    width: fit-content;
+    position: relative;
+    left: 0px;
+    margin: 0px;
+}
+.skills li::before{
+    content: "▹";
+    position: relative;
+    left: 0px;
+    color: var(--green);
+    font-size: var(--fz-sm);
+    line-height: 12px;
+}
