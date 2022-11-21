@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import "./header.css"
+import "../static/css/header.css"
 import resume from "../static/resume.pdf"
 import { HashLink } from 'react-router-hash-link';
 import { motion } from "framer-motion"
-import { ReactSVG } from 'react-svg'
+
 import Logo from './icons/Logo';
 const NavHeader = ({toggle,setToggle}) => {
   const container ={
@@ -144,48 +144,6 @@ const NavHeader = ({toggle,setToggle}) => {
               }}
         onClick={setToggleClass}><a href={resume} target='_blank'>Resume</a></motion.li>
       </ul>
-      {/* <motion.ul className= { toggle?'listHeader act':'listHeader' }
-            initial='hidden'
-            animate ='visible'
-            variants={container}
-      >
-      <label for='clicked' className='bars' onClick={setToggleClass} >
-        <div></div>
-      </label>
-
-        <motion.li  onClick={setToggleClass}><span>01.</span><HashLink smooth to='/#about'  
-          
-          initial='hidden'
-          animate='show'
-          variants={item}
-              
-        > About</HashLink></motion.li>
-        <motion.li  onClick={setToggleClass}><span>02.</span><HashLink smooth to='/#work' 
-          
-          initial='hidden'
-          animate='show'
-          variants={item}
-              
-        > Experience</HashLink></motion.li>
-        <motion.li  onClick={setToggleClass}><span>03.</span><HashLink smooth to='/#projects' 
-          
-          initial='hidden'
-          animate='show'
-          variants={item}
-              
-        > Work</HashLink></motion.li>
-        <motion.li  onClick={setToggleClass}><span>04.</span><HashLink smooth to='/#contact'  
-            initial='hidden'
-            animate='show'
-            variants={item}
-               
-        > Contact</HashLink></motion.li>
-        <motion.li  onClick={setToggleClass} 
-            initial='hidden'
-            animate='show'
-            variants={item}
-        ><a href={resume} target='_blank'>Resume</a></motion.li>
-      </motion.ul> */}
     </header>
   )
 }

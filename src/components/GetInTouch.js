@@ -1,5 +1,5 @@
 import React from 'react'
-import './getintouch.css'
+import '../static/css/getintouch.css'
 import { card } from './animation'
 import {motion} from "framer-motion"
 const GetInTouch = () => {

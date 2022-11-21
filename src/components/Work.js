@@ -1,5 +1,5 @@
 import React from 'react'
-import "./work.css"
+import "../static/css/work.css"
 import {motion } from 'framer-motion'
 import { card } from './animation'
 const Work = () => {

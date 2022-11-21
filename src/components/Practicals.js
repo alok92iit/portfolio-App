@@ -1,5 +1,5 @@
 import React from 'react'
-import "./practicals.css"
+import "../static/css/practicals.css"
 import PracticalCard from './PracticalCard'
 import { card } from './animation'
 import {motion} from "framer-motion"

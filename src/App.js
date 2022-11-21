@@ -1,5 +1,5 @@
 import React, { useState ,useEffect} from 'react'
-import './App.css';
+import './static/css/App.css';
 import "./components/NavHeader"
 import NavHeader from './components/NavHeader';
 import Intro from './components/Intro';
@@ -7,15 +7,14 @@ import About from "./components/About";
 import Github from './components/icons/Github'
 import HackerRank from './components/icons/HackerRank'
 import Linkedin from './components/icons/Linkedin'
-import "./components/intro.css"
+import "./static/css/intro.css"
 import Work from './components/Work';
 import Projects from './components/Projects';
 import Practicals from './components/Practicals';
 import GetInTouch from './components/GetInTouch';
 import {motion } from "framer-motion"
-import { ReactSVG } from 'react-svg'
 import Logo from './components/icons/Logo';
-// import  logo from "./components/icons/logo.svg"
+
 function App() {
   const [toggle,setToggle]=useState(false)
   const [splashScreen,setSplashScreen] =useState(true)
@@ -53,7 +52,6 @@ function App() {
     },4000)
   },[])
   return (
-    // <div className='overflowControlActive'{toggle?'inactive':'overflowControlActive'}>
       <div className='overflowControlActive'>
         {
           splashScreen
@@ -63,7 +61,7 @@ function App() {
               variants={svgAnimation}
 
               >
-                {/* <img src={require("./components/icons/logo.svg").default}/> */}
+             
                 <Logo/>
               </motion.div>
               :

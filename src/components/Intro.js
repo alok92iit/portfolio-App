@@ -1,5 +1,5 @@
 import React from 'react'
-import "./intro.css"
+import "../static/css/intro.css"
 import resume from '../static/resume.pdf'
 import {motion} from "framer-motion"
 const Intro = ({toggle}) => {

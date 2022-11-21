@@ -1,5 +1,5 @@
 import React from 'react'
-import "./projects.css"
+import "../static/css/projects.css"
 import shoppingCart from "../static/shoppingCart.png"
 import blogger from "../static/blogger.png"
 import Github from './icons/Github'

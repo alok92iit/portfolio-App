@@ -1,5 +1,5 @@
 import React from 'react'
-import "./About.css"
+import "../static/css/About.css"
 import Alok from "../static/Alok.jpeg" 
 import {motion} from "framer-motion"
 import {card} from "./animation.js"
